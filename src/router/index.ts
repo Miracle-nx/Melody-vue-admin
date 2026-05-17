@@ -68,33 +68,30 @@ const routes: RouteRecordRaw[] = [
                 name: 'Labs',
                 component: () => import('@/views/labs/index.vue'),
                 meta: { title: '实验室', icon: 'labs' },
-                redirect: '/labs/print',
-                children: [
-                    {
-                        path: 'print',
-                        name: 'PrintLab',
-                        component: () => import('@/views/labs/print.vue'),
-                        meta: { title: '打印实验室', icon: 'print' },
-                    },
-                    {
-                        path: 'watermark',
-                        name: 'WatermarkLab',
-                        component: () => import('@/views/labs/watermark.vue'),
-                        meta: { title: '水印实验室', icon: 'watermark' },
-                    },
-                    {
-                        path: 'upload',
-                        name: 'UploadLab',
-                        component: () => import('@/views/labs/upload.vue'),
-                        meta: { title: '上传实验室', icon: 'upload' },
-                    },
-                    {
-                        path: 'export',
-                        name: 'ExportLab',
-                        component: () => import('@/views/labs/export.vue'),
-                        meta: { title: '导出实验室', icon: 'export' },
-                    },
-                ],
+            },
+            {
+                path: 'labs/print',
+                name: 'PrintLab',
+                component: () => import('@/views/labs/print.vue'),
+                meta: { title: '打印实验室', icon: 'print' },
+            },
+            {
+                path: 'labs/watermark',
+                name: 'WatermarkLab',
+                component: () => import('@/views/labs/watermark.vue'),
+                meta: { title: '水印实验室', icon: 'watermark' },
+            },
+            {
+                path: 'labs/upload',
+                name: 'UploadLab',
+                component: () => import('@/views/labs/upload.vue'),
+                meta: { title: '上传实验室', icon: 'upload' },
+            },
+            {
+                path: 'labs/export',
+                name: 'ExportLab',
+                component: () => import('@/views/labs/export.vue'),
+                meta: { title: '导出实验室', icon: 'export' },
             },
             {
                 path: 'settings',
